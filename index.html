@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GitHub Explorer</title>
+
+  <meta
+    name="description"
+    content="Search GitHub users and explore their repositories."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="brand">
+      <span class="brand-icon">⌘</span>
+      <h1>GitHub Explorer</h1>
+    </div>
+
+    <p class="tagline">
+      Explore GitHub profiles and repositories.
+    </p>
+
+    <form id="search-form" class="search">
+      <label for="search-input" class="visually-hidden">
+        Search GitHub username
+      </label>
+
+      <input
+        id="search-input"
+        class="search-input"
+        type="search"
+        placeholder="Try: sagar-kumar3099"
+        autocomplete="off"
+      />
+
+      <button
+        id="search-button"
+        class="search-button"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+
+  </header>
+
+
+  <main class="container">
+
+    <p id="status" class="status"></p>
+
+    <!-- Profile will be inserted here -->
+    <section id="profile" class="profile"></section>
+
+    <!-- Repositories will be inserted here -->
+    <section>
+      <h2 id="repo-heading" class="repo-heading"></h2>
+
+      <div id="repositories" class="repositories"></div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <p>
+      Data provided by
+      <a
+        href="https://github.com"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>.
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
